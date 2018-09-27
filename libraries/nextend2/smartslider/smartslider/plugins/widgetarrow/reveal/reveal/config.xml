@@ -1,0 +1,19 @@
+<root>
+  <params name="image" label="Image settings" hidetitle="1">
+    <param type="color" name="widget-arrow-background" label="Background" alpha="1"/>
+    <param type="group" label="Title">
+      <param type="onoff" name="widget-arrow-title-show" label="Shows"/>
+      <param name="widget-arrow-title-font" type="font" previewmode="link" set="1900" label="Font">
+        <![CDATA[ <div class="{fontClassName}"><a href="#" onclick="return false;">Slide title</a></div> ]]>
+      </param>
+      <param type="color" name="widget-arrow-title-background" label="Background" alpha="1"/></param>
+    <param type="radio" name="widget-arrow-animation" label="Animations">
+      <option value="slide">Slide</option>
+      <option value="fade">Fade</option>
+      <option value="turn">Turn</option>
+    </param>
+    <param type="imagelistfromfolder" name="widget-arrow-previous" label="Previous" folder="previous" required="1"/>
+    <param type="mirror" name="widget-arrow-mirror" label="Mirror" class="n2-expert"/>
+    <param type="imagelistfromfolder" name="widget-arrow-next" label="Next" class="n2-expert" folder="next" required="1"/>
+  </params>
+</root>

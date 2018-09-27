@@ -1,0 +1,16 @@
+tr.read{
+	background-color:rgba(243,243,243,.85);
+}
+tr:hover td{
+	background:#f0f8ff;
+}
+#CallbackTable td,#CallbackTable th{
+	min-width:100px;
+	text-align:center;	
+}
+#CallbackTable td.callback_td_long{
+	min-width:120px;
+}		
+#CallbackTable tr,#CallbackTable th{
+	height: 30px;
+}

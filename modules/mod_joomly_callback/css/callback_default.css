@@ -1,0 +1,212 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+/* CSS Form */
+
+div.joomly-callback-main, div.special-alert,div.joomly-callback-main.jmoddiv.jmodinside{
+	display: none;
+    position:absolute;
+    background:white;
+    z-index:1000000;
+	padding:0px 0px;
+	top:-400px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}	
+div.dimmer{
+	z-index:999995;
+	position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:black no-repeat scroll center center;
+	opacity: 0.5;
+}
+div.g-callback-recaptcha{
+    margin: 0 auto;display: table; 
+}
+@media (max-width: 768px)
+{
+	div.g-callback-recaptcha {
+	  -webkit-transform: scale(0.87);
+	     -moz-transform: scale(0.87);
+	      -ms-transform: scale(0.87);
+	       -o-transform: scale(0.87);
+	          transform: scale(0.87);
+	  -webkit-transform-origin:0 0;      
+		-moz-transform-origin:0; 
+	    -ms-transform-origin:0;
+	    -o-transform-origin:0;
+	    transform-origin:0;   
+	}
+}
+div.joomly-callback-main input{
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+	border-radius: 0px;
+    vertical-align: middle;
+	color: #555;
+	background-color: #fff;
+}
+div.joomly-callback-main label{
+	font-weight:normal;
+	color:black;
+}
+div.joomly-callback-main select{
+	display: inline-block;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	color: #555;
+	background-color: #fff;
+	width: auto;
+	height: 35px;
+	margin-left:5px;
+	margin-bottom:0px;
+	padding: 6px 4px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+form.reg_form{
+	margin-bottom: 0px;	
+}	
+div.joomly-callback-div, button.button-joomly-callback-lightbox{
+	margin-top: 15px;	
+}	
+div.joomly-callback-div > input{
+	margin-bottom:0px;
+}
+div.tel > a.fontsize8{
+	font-size:8px;
+	margin-right: 3%;
+}
+div.tel{
+	text-align: right;
+}
+div.joomly-callback-body{
+	padding:20px 15px 0px 15px;
+	background-color: #fff;
+}
+div.joomly-alert-body{
+	padding: 20px;
+}
+div.joomly-callback-caption{
+	border-bottom: 1px solid #E0D8D8;
+}
+div.joomly-callback-caption > div{
+	display:inline-block;
+}
+div.joomly-callback-cap{
+	margin-left:10%;
+	width:80%;
+}	
+div.joomly-callback-caption{
+	background-color: #21ad33;
+	color:white;
+}
+.joomly-callback{
+	cursor: pointer;
+}
+/* CSS Buttons */
+button.button-joomly-callback-form, button[type="submit"].button-joomly-callback-lightbox {
+   padding: 14px 18px;
+   border: 0 none;
+   font-weight: 700;
+   letter-spacing: 1px;
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+   text-transform: uppercase;
+   height:auto;
+   width: auto;
+   background-color: #21ad33;
+   color: #ffffff;
+   box-sizing: border-box !important;
+   -webkit-box-sizing: border-box !important;
+   -moz-box-sizing: border-box !important;
+   	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	cursor: pointer;
+	text-shadow: none;
+    background-image: none;
+}
+button[type="submit"].button-joomly-callback-lightbox{
+	width: 100%;
+	max-width: 100%;
+}
+button.button-joomly-callback-form:hover,button[type="submit"].button-joomly-callback-lightbox:hover{
+	opacity: 0.8;
+	outline: 0 none;
+}
+/* CSS Fields */
+p.callback-text-center{
+	text-align:center;
+	margin: 0px;
+	color:black;
+}
+img.img-joomly-callback,button.button-joomly-callback-lightbox{
+	-webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;	
+}	
+input[type="text"].joomly-callback-field,input[type="tel"].joomly-callback-field
+{
+	height:40px;
+	padding: 4px 6px;
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	font-size: 13px;
+    line-height: 18px;
+    width:100%;
+    max-width: 100%;
+}
+img.img-joomly-callback{
+	min-width:50px;
+	width:30%;
+	margin-right:3%;
+	margin-left: 0px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+input[type="text"].joomly-callback-field.captcha-joomly-callback{
+	display:inline-block;
+	width:66.5%;
+}
+/* CSS ALERT */
+div.special-alert > p{
+	margin: 20px 0px 30px 0px;
+	text-align:center;	
+	font-size: 16px;
+}
+div.joomly-callback-cap > h4{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 14px;
+    line-height: 16px;
+	text-align:center;
+	color:white;
+}
+div.joomly-callback-closer{
+	width:10%;
+}
+div.joomly-callback-closer > i{
+	float:right;
+	cursor: pointer;
+	margin-right:10px;
+	color:white;
+}
+input[type="checkbox"].joomly-callback-checkbox{
+	margin: 0px 0px 0px 10px;"
+}

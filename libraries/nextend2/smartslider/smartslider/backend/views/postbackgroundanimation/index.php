@@ -1,0 +1,89 @@
+<?php
+/**
+* @author    Roland Soos
+* @copyright (C) 2015 Nextendweb.com
+* @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+defined('_JEXEC') or die('Restricted access');
+?><?php
+/**
+ * @var $model N2SystemAnimationModel
+ */
+
+$sets = $model->getSets();
+
+$postBackgroundAnimations = new stdClass();
+
+N2JS::addFirstCode("
+    new NextendPostBackgroundAnimationManager({
+        setsIdentifier: '" . $model->type . "set',
+        sets: " . json_encode($sets) . ",
+        visuals: " . json_encode($postBackgroundAnimations) . ",
+        ajaxUrl: '" . $this->appType->router->createAjaxUrl(array('postbackgroundanimation/index')) . "'
+    });
+");
+$app = N2Base::getApplication('smartslider');
+
+$model->renderForm();
+
+?>
+<div class="n2-form-tab ">
+    <div class="n2-h2 n2-content-box-title-bg">
+        <?php n2_e('Preview'); ?>
+    </div>
+
+    <div>
+        <div class="n2-postbg-animation-slider">
+            <div class="n2-postbg-animation-slide">
+                <img
+                    src="<?php echo N2ImageHelper::fixed('$system$/images/placeholder/imagefront.svg'); ?>"/>
+            </div>
+        </div>
+
+        <style>
+            .n2-postbg-animation-slider {
+                cursor: crosshair;
+                position: relative;
+                width: 800px;
+                height: 600px;
+                margin: 20px;
+                overflow: hidden;
+            }
+
+            .n2-postbg-animation-slide {
+                width: 100%;
+                height: 100%;
+            }
+
+            .n2-postbg-animation-slider img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            .n2-ss-slide-background,
+            .n2-ss-slide-background > div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .n2-ss-slide-stretch {
+                width: 100%;
+                height: 100%;
+            }
+
+            .n2-ss-slide-center {
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+
+            .n2-ss-slide-tile {
+                background-repeat: repeat;
+                background-position: 50% 50%;
+            }
+        </style>
+    </div>
+</div>

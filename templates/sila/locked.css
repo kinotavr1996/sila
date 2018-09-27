@@ -1,0 +1,37 @@
+html,
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	}
+
+body{
+	/*background: #000 url("/templates/meribr/MeriBRcss/mary-blur.jpg");*/
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: #444;
+	font-family: Arial;
+	}
+
+.heading{
+	padding: 50px 0px 0px 0px;
+	}
+
+.heading h1{
+	margin: 0;
+	}
+
+
+.description{
+	}
+
+.wrapper{
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+	}
+
+.city-info{
+	margin: 50px 0px 0px 0px;
+	}

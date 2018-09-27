@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>brilliant_new</name>
+	<version>1.0</version>
+	<creationDate>10/06/2016</creationDate>
+	<author>Brilliant</author>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>brilliant_new</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+		<position>header-main</position>
+		<position>position_header_lang</position>
+		<position>position_footer</position>
+		<position>header-banner</position>
+		<position>header-call</position>
+		<position>benefit_calculator</position>
+		<position>procent_calculator</position>
+	</positions>
+    <config>
+        <fields name="params">
+            <fieldset name="city_forbidden" label="BRILLIANT_SETTINGS">
+                <field name="city_forbidden" type="list" default="1" label="BRILLIANT_CITY_FORBIDDEN" description="BRILLIANT_CITY_FORBIDDEN">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
+                </field>
+
+                <field name="php_less_compiler" type="list" default="1" label="BRILLIANT_PHP_LESS_COMPILER" description="BRILLIANT_PHP_LESS_COMPILER">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
+                </field>
+
+                <field name="php_less_compiler_dev_mode" type="list" default="1" label="BRILLIANT_PHP_LESS_COMPILER_DEV_MODE" description="BRILLIANT_PHP_LESS_COMPILER_DEV_MODE">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
+                </field>
+                
+
+                <field name="show_php_errors" type="list" default="1" label="BRILLIANT_SHOW_PHP_ERRORS" description="BRILLIANT_PHP_LESS_COMPILER">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
+                </field>
+                
+            </fieldset>
+        
+            
+
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ARROW" sketch:type="MSLayerGroup" transform="translate(-451.000000, 0.000000)" fill="#FFFFFF" opacity="0.9">
+            <g id="simple" transform="translate(460.000000, 6.000000)" sketch:type="MSShapeGroup">
+                <path d="M13,9.99714286 L13,9.99380952 C13,9.59 12.824,9.22571429 12.541,8.96571429 L12.5415,8.9652381 L3.5415,0.393809524 L3.5375,0.397619048 C3.268,0.151428571 2.903,0 2.5,0 C1.6715,0 1,0.63952381 1,1.42857143 C1,1.86190476 1.203,2.25 1.523,2.51190476 L9.382,9.99666667 L1.42,17.5795238 L1.4205,17.58 C1.1605,17.8371429 1,18.1861905 1,18.5714286 C1,19.3604762 1.6715,20 2.5,20 C2.9045,20 3.271,19.8471429 3.541,19.5995238 L3.5415,19.6 L12.5415,11.0285714 L12.541,11.0280952 C12.824,10.7680952 13,10.4038095 13,10 L13,9.99714286 L13,9.99714286 Z" id="simple-small-right"></path>
+            </g>
+        </g>
+    </g>
+</svg>

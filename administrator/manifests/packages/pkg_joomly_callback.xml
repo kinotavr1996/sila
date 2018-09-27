@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="1.6" method="upgrade">
+ <name>Joomly Callback </name>
+ <author>Joomly.ru</author>
+ <creationDate>March 2018</creationDate>
+ <packagename>joomly_callback</packagename>
+ <version>2.19</version>
+ <url>http://joomly.net</url>
+ <packager>Artem Yegorov</packager>
+ <packagerurl>http://joomly.net</packagerurl>
+ <description>Callback module for Joomla!</description>
+ <files folder="packages">
+   <file type="component" id="com_joomlycallback" >com_joomlycallback.zip</file>
+   <file type="module" id="mod_joomly_callback" client="site">mod_joomly_callback.zip</file>
+ </files>
+ </extension>

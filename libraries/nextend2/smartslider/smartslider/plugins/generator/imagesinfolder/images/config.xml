@@ -1,0 +1,8 @@
+<root>
+    <params name="filter" label="Filter">
+        <param name="sourcefolder" label="Source folder" type="folders" style="width: 300px;"/>
+    </params>
+    <params name="options" label="Options" class="n2-expert">
+        <param name="iptc" label="IPTC" type="onoff" default="0"/>
+    </params>
+</root>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="3.0" method="upgrade">
+
+		<name>Joomly Callback</name> 
+		<author>Artem Yegorov</author>
+		<creationDate>March 2018</creationDate>
+		<copyright>Copyright (C) 2018 Artem Yegorov All rights reserved.</copyright>
+		<authorEmail>rubacking@gmail.com</authorEmail>
+		<authorUrl>http://joomly.net</authorUrl>
+		<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+		<version>2.19</version>
+
+        <description>
+		Simple component for Callback creation.
+		</description>
+
+
+	
+		<files>
+			<folder>models</folder>
+			<folder>languages</folder>
+			<folder>controllers</folder>
+			<folder>tables</folder>
+			<filename>controller.php</filename>
+			<filename>joomlycallback.php</filename>
+			<filename>router.php</filename>
+			<filename>index.html</filename>
+		</files>
+		
+		<languages>
+			<language tag="en-GB">languages/en-GB.com_joomlycallback.ini</language>
+			<language tag="ru-RU">languages/ru-RU.com_joomlycallback.ini</language>
+			<language tag="es-ES">languages/es-ES.com_joomlycallback.ini</language>
+			<language tag="en-GB">languages/en-GB.com_joomlycallback.sys.ini</language>
+			<language tag="ru-RU">languages/ru-RU.com_joomlycallback.sys.ini</language>
+			<language tag="es-ES">languages/es-ES.com_joomlycallback.sys.ini</language>
+		</languages>
+	
+		<administration>
+
+			<menu link="option=com_joomlycallback" alias="Joomly Callback">CALLBACK</menu>	       
+				   
+			<files folder="admin">
+				<folder>tables</folder>
+				<folder>controllers</folder>
+				<folder>models</folder>
+				<folder>views</folder>
+				<folder>css</folder>
+				<filename>controller.php</filename>
+				<filename>joomlycallback.php</filename>
+				<filename>router.php</filename>
+				<filename>index.html</filename>
+			</files>
+			
+			<languages>
+				<language tag="en-GB">languages/en-GB.com_joomlycallback.ini</language>
+				<language tag="ru-RU">languages/ru-RU.com_joomlycallback.ini</language>
+				<language tag="es-ES">languages/es-ES.com_joomlycallback.ini</language>
+				<language tag="en-GB">languages/en-GB.com_joomlycallback.sys.ini</language>
+				<language tag="ru-RU">languages/ru-RU.com_joomlycallback.sys.ini</language>
+				<language tag="es-ES">languages/es-ES.com_joomlycallback.sys.ini</language>
+			</languages>
+
+		</administration>
+</extension>

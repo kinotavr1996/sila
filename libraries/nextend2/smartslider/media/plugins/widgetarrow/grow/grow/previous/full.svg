@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ARROW" sketch:type="MSLayerGroup" transform="translate(-451.000000, 0.000000)" fill="#FFFFFF">
+            <g id="full" transform="translate(461.000000, 8.000000)" sketch:type="MSShapeGroup">
+                <path d="M8.9958484,0.990664033 C8.9958484,0.566664033 8.7918484,0.267664033 8.3858484,0.0926640331 C7.9768484,-0.0803359669 7.6138484,-0.0113359669 7.2928484,0.301664033 L0.286848403,7.27666403 C0.0858484027,7.47566403 -0.0101515973,7.71366403 0.00084840266,7.99266403 C0.00084840266,8.25966403 0.0968484027,8.49066403 0.286848403,8.68166403 L7.2928484,15.682664 C7.6138484,16.003664 7.9768484,16.071664 8.3858484,15.891664 C8.7918484,15.717664 8.9958484,15.409664 8.9958484,14.969664 L8.9958484,0.990664033 L8.9958484,0.990664033 L8.9958484,0.990664033 Z" id="full-left"></path>
+            </g>
+        </g>
+    </g>
+</svg>

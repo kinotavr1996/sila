@@ -1,0 +1,1 @@
+DROP TABLE `#__joomly_callback`;
