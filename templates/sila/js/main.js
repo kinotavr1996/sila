@@ -75,7 +75,7 @@ jQuery(document).ready(function () {
         $('.button-joomly-callback-form').click();
       });
 
-      $('.project_btn.next').click(function(){
+      $('.project_btn.next, .decision .pass_btn').click(function(){
         var currentStep = parseInt($('.step_link.active.current').attr("id").split('_')[1]);
         currentStep++;
         $($('#step_' + currentStep).find('.span_circle')).click();
@@ -101,4 +101,14 @@ jQuery(document).ready(function () {
             yourProfit = projectProfit /(projectCost / yourDecision);
             $('.yourProfit').val(yourProfit);
       });
+
+      $(".passport_cal_wrap .pass_btn").click(function(){
+        var percent = parseInt($('.percent').val()),
+          yourDecision = parseInt($('.decision').val()),
+          yourProfit = 0;
+          yourProfit = yourDecision * percent / 100;
+          $('.profit').val(yourProfit);
+          $('.finally-decision').val(yourDecision);
+    });
+
 });

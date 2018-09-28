@@ -3,8 +3,10 @@ defined('_JEXEC') or die;
 jimport( 'joomla.application.module.helper' );
 $module = JModuleHelper::getModule('mod_plan_procent');
 $param = json_decode($module->params); // декодирует JSON с параметрами модуля
+$projectValue = $param->invest_sum;
+$procent = $param->procent_per_year;
 // echo '<pre>';
-//     print_r(); // смотрим все параметры
+//     print_r($param); // смотрим все параметры
 // echo '</pre>';
 ?>
             <div class="tab_item passport_plan step_two clearfix" id="passport_plan">
@@ -28,55 +30,43 @@ $param = json_decode($module->params); // декодирует JSON с пара�
 
                 <div class="passport_title">Калькулятор прибыли</div>
 
-
+                <input class="projectValue" type="hidden" value="<?php echo $projectValue?>">
                 <div class="passport_cal_wrap">
 
 
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Процент по вкладу</div>
 
-                        <div class="pass_input_self"><input type="text"></div>
+                        <div class="pass_input_self"><input type="text" class="percent" disabled value="<?php echo $procent?>"></div>
                     </div>
 
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Ваше вложение</div>
 
-                        <div class="pass_input_self"><input type="text"></div>
+                        <div class="pass_input_self"><input class="decision" type="text"></div>
                     </div>
 
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Ваш доход в год</div>
 
-                        <div class="pass_input_self"><input type="text"></div>
+                        <div class="pass_input_self"><input class="profit" type="text"></div>
                     </div>
-
-
                     <div class="pass_btn">Посчитать</div>
-
-
                 </div>
                 <div class="pass_sub_title">Ваше рещение</div>
                 <div class="passport_cal_wrap decision">
-
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Ваша сумма Вложения</div>
-
-                        <div class="pass_input_self"><input type="text"></div>
+                        <div class="pass_input_self"><input  class="finally-decision"  type="text"></div>
                     </div>
-                    <div class="pass_btn">Посчитать</div>
-
+                    <div class="pass_btn">Готово</div>
                 </div>
             </div>
 
             <div class="tab_item percentage_plan step_three clearfix" id="percentage_plan">
-
                 <div class="image_bg"></div>
-
-
                 <div class="perent_text_wrap">
-
                     <h2 class="h_two block_title">Процентный план</h2>
-
                     <div class="tab_txt">
                         <p> С учетом сложившейся международной обстановки, высокое качество позиционных исследований
                             требует
@@ -102,13 +92,13 @@ $param = json_decode($module->params); // декодирует JSON с пара�
                     </div>
 
                     <div class="percent_invest_block clearfix">
-                        <div class="invest_caption">Ваша сумма вложения</div>
-                        <div class="invest_data">175 000</div>
+                        <div class="invest_caption " disabled>Ваша сумма вложения</div>
+                        <input class="invest_data finally-decision" value='0' disabled>
                     </div>
 
                     <div class="percent_invest_block clearfix">
                         <div class="invest_caption">ДОХОДНОСТЬ В ГОД</div>
-                        <div class="invest_data">28 00</div>
+                        <input class="invest_data profit" value="">
                     </div>
 
                     <div class="percent_agree">
@@ -120,12 +110,10 @@ $param = json_decode($module->params); // декодирует JSON с пара�
                 <div class="clearfix"></div>
                 <div class="percent_payment clearfix">
                     <div class="pay_title">Выберите способ оплаты</div>
-
                     <div class="percent_pay_wrap">
                         <div class="image_pay master"></div>
                         <div class="image_pay yandex"></div>
                         <div class="image_pay paypal"></div>
-
                     </div>
                 </div>
             </div>
