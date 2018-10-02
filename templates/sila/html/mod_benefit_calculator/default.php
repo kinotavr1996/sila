@@ -55,7 +55,7 @@ $project_cost = $param->project_cost;
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title ">Ваше вложение</div>
 
-                        <div class="pass_input_self"><input class='decision' type="text"></div>
+                        <div class="pass_input_self"><input class='yourDecision' type="text"></div>
                     </div>
 
                     <div class="pass_inpt_wrap">
@@ -67,13 +67,11 @@ $project_cost = $param->project_cost;
                 </div>
                 <div class="project_sub_title">Ваше решение</div>
                 <div class="project_cal_wrap decision">
-
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Ваша сумма Вложения</div>
-
-                        <div class="pass_input_self"><input class='yourProfit' type="text"></div>
+                        <div class="pass_input_self"><input class='finally-decision' type="text"></div>
                     </div>
-                    <div class="pass_btn">Посчитать</div>
+                    <div class="pass_btn">Готово</div>
 
                 </div>
             </div>

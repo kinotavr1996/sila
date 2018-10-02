@@ -39,7 +39,7 @@ $position = 'benefit_calculator';
 
                     <div class="percent_invest_block clearfix">
                         <div class="invest_caption">Ваша сумма вложения</div>
-                        <div class="invest_data">175 000</div>
+                        <div class="invest_data finally-decision" >175 000</div>
                     </div>
 
 

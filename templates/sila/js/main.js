@@ -4,10 +4,9 @@ jQuery(document).ready(function () {
         jQuery(this).toggleClass('active')
     });
    
-   
-    jQuery('.span_circle').on('click',function(){
+    function navigator(selector){
         var
-            parent = jQuery(this).parent('.step_link'),
+            parent = jQuery(selector).parent('.step_link'),
             data = parent.data('step');
 
         jQuery('.steps_name_box').find('.st_name').removeClass('active');
@@ -43,8 +42,7 @@ jQuery(document).ready(function () {
         $('.project_btn.plan').click(function(){
             window.href = '/';
         });
-    });
-
+    }
 
     jQuery(".active_lang").click(function () {
         if( jQuery(".lang_box").css('display')=="none"){
@@ -76,32 +74,37 @@ jQuery(document).ready(function () {
       });
 
       $('.project_btn.next, .decision .pass_btn').click(function(){
-        var currentStep = parseInt($('.step_link.active.current').attr("id").split('_')[1]);
-        currentStep++;
-        $($('#step_' + currentStep).find('.span_circle')).click();
+        var flag = parseInt($('.finally-decision').val());
+            var currentStep = parseInt($('.step_link.active.current').attr("id").split('_')[1]);
+            currentStep++;
+        if(flag > 0 && currentStep - 1 == 3)
+            navigator($($('#step_' + currentStep).find('.span_circle')).selector);
+        if(currentStep - 1 != 3)
+            navigator($($('#step_' + currentStep).find('.span_circle')).selector);
       });
 
       $('.project_btn.back').click(function(){
         var currentStep = parseInt($('.step_link.active.current').attr("id").split('_')[1]);
-        currentStep--
-        $($('#step_' + currentStep).find('.span_circle')).click();
+        currentStep--;
+        navigator($($('#step_' + currentStep).find('.span_circle')).selector);
       });
 
       $('.project').click(function(){
-        $($('#step_2').find('.span_circle')).click();
+        navigator($($('#step_2').find('.span_circle')));
       });
 
       $(".pass_btn").click(function(){
           var projectCost = parseInt($('.project-cost').val()),
             percent = parseInt($('.project-percent').val()),
             projectProfit = parseInt($('.profit').val()),
-            yourDecision = parseInt($('.decision').val()),
+            yourDecision = parseInt($('.yourDecision').val()),
             yourProfit = 0;
 
             yourProfit = projectProfit /(projectCost / yourDecision);
             $('.yourProfit').val(yourProfit);
+            $('.finally-decision').val(yourProfit);
       });
-
+    
       $(".passport_cal_wrap .pass_btn").click(function(){
         var percent = parseInt($('.percent').val()),
           yourDecision = parseInt($('.decision').val()),
@@ -109,6 +112,6 @@ jQuery(document).ready(function () {
           yourProfit = yourDecision * percent / 100;
           $('.profit').val(yourProfit);
           $('.finally-decision').val(yourDecision);
+          $('.finally-decision').text(yourDecision);
     });
-
 });
