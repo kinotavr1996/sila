@@ -35,6 +35,11 @@ $position = 'procent_calculator';
         </div>
 </div>
         </div>
+
+
+
+
+
 		<div class="tab_window">
         <div class="wrap main_tap_wrap">
 		<?php echo $this->item->text; ?>

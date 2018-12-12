@@ -193,8 +193,144 @@ header .logo {
 .main_slider {
     background-size: cover;
 }
+/********************** form **********************/
+body div.joomly-callback-caption{
+    background-color: #796513;
+    border-radius: 10px;
+    margin: 5px 5px 0;
+}
+body div.joomly-callback-caption > div{
+    vertical-align: middle;
+}
 
-/**********************steps**********************/
+#joomly-callback .joomly-callback-field {
+    border-radius: 10px;
+    border: 1px solid #796513;
+}
+#joomly-callback .callback-text-center{
+    color: #796513 ;
+}
+ button.button-joomly-callback-form, button[type="submit"].button-joomly-callback-lightbox{
+    background-color: #796513 !important;
+}
+#joomly-callback{
+    padding:10px;
+ }
+.form_inner_wrap{
+    padding: 5px;
+    border:1px solid #796513;
+    border-radius: 5px;
+}
+.reg_box{
+    float: right;
+    padding-left: 30px;
+}
+.reg_enter,.reg_registr{
+    display: block;
+
+}
+.t_align{
+    text-align: center;
+}
+.mash_img{
+    display: table;
+    max-width: 100%;
+    margin: 30px auto 30px;
+}
+.bar{
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    margin: 0 2px;
+    background-color: #B3B3B3;
+}
+.bar.active{
+    background-color:#796513;
+}
+.mash_caption{
+    display: table;
+    margin: 0 auto 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #847232;
+    font-weight: 500;
+}
+.speculative_benefit{
+    text-transform: uppercase;
+}
+.spec_box,.invest_block{
+    display: table;
+    margin: 0 auto;
+}
+.invest_block{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.invest-rate{
+    display: flex;
+    justify-content:center;
+}
+.spec_box .title,.invest_block .title,.fututer_benefit_block .title{
+    text-transform: uppercase;
+    color: #796513;
+    margin-bottom:20px;
+    text-align: center;
+}
+.rate_self{
+    position: relative;
+    display: flex;
+    padding:5px;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 100px;
+    height:100px;
+    background-color:#796513;
+    color: #ffffff;
+    border-radius: 50%;
+    margin:10px;
+    box-shadow: 0 0 0 2px transparent;
+    border:5px solid #ffffff;
+    transition: box-shadow 0.05s linear;
+    cursor: pointer;
+}
+.rate_self:hover{
+    box-shadow: 0 0 0 2px #796513;
+}
+.rate_wrap{
+    padding: 5px;
+}
+.rate_self .rate{
+    text-align: center;
+
+}
+.spec_percent,.fututer_benefit_data{
+    padding: 20px 40px;
+    background-color: #796513;
+    color: #ffffff;
+    max-width: 200px;
+    border-radius:30px;
+    overflow:hidden;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+    font-size: 16px;
+}
+.change_date{
+    text-align: center;
+}
+.benefit_scale_box{
+    text-align: center;
+}
+.scale_bar{
+    display: inline-block;
+    vertical-align: middle;
+}
+.scale_num{
+    display: inline-block;
+    vertical-align: middle;
+}
+    /**********************steps**********************/
 .step_btn_wrap > li {
     display: inline-block;
     padding-left: 52px;
@@ -295,6 +431,7 @@ header .logo {
     color: #5b5b5b;
     line-height: 21px;
 }
+
 
 /*************** percentage ***********/
 #percentage_plan .image_bg {
@@ -489,7 +626,7 @@ header .logo {
     position: relative;
     text-transform: uppercase;
     color: #796513;
-    padding: 40px 100px 40px 0;
+    padding: 40px 0 40px 100px;
     display: table;
     margin: 30px auto 30px;
 }
@@ -501,7 +638,7 @@ header .logo {
     background-image: url(../images/calculator.png);
     background-repeat: no-repeat;
     position: absolute;
-    right: 5px;
+    left: 5px;
     top: 5px;
 }
 

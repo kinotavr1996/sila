@@ -24,13 +24,13 @@ endif;
 //Pathes
 ////////////////////////////////////////////////////////////////////////////
 $css_path = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR;
-$tmpl_path = $this->baseurl . 'templates' . DIRECTORY_SEPARATOR . $this->template . DIRECTORY_SEPARATOR;
+$tmpl_path = $this->baseurl . '/templates/'. $this->template.'/';
 $tmpl_need = JUri::base() . "templates/fermasila/";
 
 ////////////////////////////////////////////////////////////////////////////
 //Set css file and adding php less compiler and compile less with creating unique file like 'style.X.css'
 ////////////////////////////////////////////////////////////////////////////
-$css_file_name = 'style.css'; //set base name
+$css_file_name = 'style.css?v=' . rand(1,100); //set base name
 ////////////////////////////////////////////////////////////////////////////
 //PHP Error reporting
 ////////////////////////////////////////////////////////////////////////////
@@ -101,7 +101,7 @@ $menu = $app->getMenu();
 
     <?php // wow file ?>
     <?php // Main javascript of web page. ?>
-    <script src="<?php echo $tmpl_path . '/js/main.js?v.1.0.3'; ?>" type="text/javascript"></script>
+    <script src="<?php echo $tmpl_path . '/js/main.js?v=' . rand(1,100); ?>" type="text/javascript"></script>
 
     <script src="<?php echo $tmpl_path . '/js/jquery.validate.min.js'; ?>" type="text/javascript"></script>
 
@@ -129,10 +129,14 @@ $menu = $app->getMenu();
                             <jdoc:include type="modules" name="header-call"/>
                         <?php endif; ?>
                     </div>
-
+                    <div class="reg_box">
+                        <a href="#" class="reg_enter">Вход</a>
+                        <a href="#" class="reg_registration">Регистрация</a>
+                    </div>
                     <a href="#" class="order_call_box">
                         Заказать звонок
                     </a>
+
                 </div>
 
                 <div class="menu_bot_box clearfix">
