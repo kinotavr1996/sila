@@ -1,5 +1,3 @@
-
-
 jQuery(document).ready(function () {
     
     jQuery('.agree_input').click(function (e) {

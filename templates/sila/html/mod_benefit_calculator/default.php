@@ -5,9 +5,9 @@ $module = JModuleHelper::getModule('mod_benefit_calculator');
 $param = json_decode($module->params); // декодирует JSON с параметрами модуля
 $procent = $param->procent_for_investor_from_the_project;
 $project_cost = $param->project_cost;
-echo '<pre>';
-    print_r($param); // смотрим все параметры
-echo '</pre>';
+// echo '<pre>';
+//     print_r($param); // смотрим все параметры
+// echo '</pre>';
 ?>
 <!-- <div class="wrap">
     

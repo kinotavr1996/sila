@@ -114,4 +114,7 @@ jQuery(document).ready(function () {
           $('.finally-decision').val(yourDecision);
           $('.finally-decision').text(yourDecision);
     });
+    $('.rate_self').click(function(){
+        $(this).toggleClass('active');
+    });
 });

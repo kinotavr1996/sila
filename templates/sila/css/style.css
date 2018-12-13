@@ -306,7 +306,7 @@ body div.joomly-callback-caption > div{
     transition: box-shadow 0.05s linear;
     cursor: pointer;
 }
-.rate_self:hover{
+.rate_self:hover, .rate_self.active{
     box-shadow: 0 0 0 2px #796513;
 }
 .rate_wrap{
