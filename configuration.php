@@ -4,6 +4,7 @@ class JConfig {
 	public $offline_message = 'Сайт закрыт на техническое обслуживание.<br />Пожалуйста, зайдите позже.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
+	
 	public $sitename = 'sila';
 	public $editor = 'tinymce';
 	public $captcha = '0';
@@ -15,7 +16,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'rublemania';
+	public $db = 'ferma';
 	public $dbprefix = 'azqvr_';
 	public $live_site = '';
 	public $secret = 'jnlLGYTugrBQNiqS';

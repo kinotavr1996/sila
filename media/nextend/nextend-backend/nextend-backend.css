@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Nextend';
-    src: url(//ferma.tv/libraries/nextend2/nextend/media/css/../fonts/Nextend.eot?aw98783);
-    src: url(//ferma.tv/libraries/nextend2/nextend/media/css/../fonts/Nextend.eot?#iefixaw98783) format('embedded-opentype'),
-    url(//ferma.tv/libraries/nextend2/nextend/media/css/../fonts/Nextend.ttf?aw98783) format('truetype'),
-    url(//ferma.tv/libraries/nextend2/nextend/media/css/../fonts/Nextend.woff?aw98783) format('woff'),
-    url(//ferma.tv/libraries/nextend2/nextend/media/css/../fonts/Nextend.svg?aw98783#Nextend) format('svg');
+    src: url(//sila/libraries/nextend2/nextend/media/css/../fonts/Nextend.eot?aw98783);
+    src: url(//sila/libraries/nextend2/nextend/media/css/../fonts/Nextend.eot?#iefixaw98783) format('embedded-opentype'),
+    url(//sila/libraries/nextend2/nextend/media/css/../fonts/Nextend.ttf?aw98783) format('truetype'),
+    url(//sila/libraries/nextend2/nextend/media/css/../fonts/Nextend.woff?aw98783) format('woff'),
+    url(//sila/libraries/nextend2/nextend/media/css/../fonts/Nextend.svg?aw98783#Nextend) format('svg');
     font-weight: normal;
     font-style: normal;
 }

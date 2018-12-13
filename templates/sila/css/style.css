@@ -41,16 +41,16 @@ input:focus {
 
 #header {
     padding-top: 40px;
-    padding-bottom: 40px;
-    color: #796513;
+    padding-bottom: 20px;
+    color: white;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
 }
 
 .header-pusher {
-    height: 200px;
+    /* height: 200px; */
 }
 
 header .logo {
@@ -81,6 +81,7 @@ header .logo {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    color: white;
 }
 
 .free_call_box {
@@ -95,7 +96,7 @@ header .logo {
 }
 
 .order_call_box, .become-partner {
-    width: 170px;
+    width: 150px;
     display: inline-block;
     padding: 5px 35px;
     background-color: #796513;
@@ -103,6 +104,8 @@ header .logo {
     text-transform: uppercase;
     text-align: center;
     border-radius: 20px;
+    border: 1px solid white;
+    font-size: 15px;
 }
 
 .order_call_box {
@@ -110,7 +113,7 @@ header .logo {
 }
 
 .free_call_box .free_num {
-    color: #796513;
+    color: white;
 }
 
 .menu_wrap_self {
@@ -128,7 +131,7 @@ header .logo {
 
 .menu_wrap_self li a {
     text-transform: uppercase;
-    color: #796513;
+    color:white;
     font-size: 14px;
 }
 
@@ -138,7 +141,7 @@ header .logo {
 
 .menu_wrap_self li.active a {
     text-decoration: underline;
-    color: #796513;
+    color:white;
 }
 
 .active_lang {
@@ -180,6 +183,10 @@ header .logo {
     display: block;
 }
 
+.lang_box a{
+    color: white;
+}
+
 .menu_bot_box .lang_list {
     position: absolute;
     top: calc(100% + 5px);
@@ -187,7 +194,7 @@ header .logo {
 }
 
 .menu_bot_box {
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .main_slider {
@@ -224,6 +231,11 @@ body div.joomly-callback-caption > div{
 .reg_box{
     float: right;
     padding-left: 30px;
+    text-align: right;
+}
+
+.reg_box a{
+    color: white; 
 }
 .reg_enter,.reg_registr{
     display: block;
@@ -1228,4 +1240,8 @@ body div.joomly-callback-caption > div{
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+}
+
+#joomly-callback .tel{
+    display: none;
 }
