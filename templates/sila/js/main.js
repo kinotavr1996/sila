@@ -24,7 +24,7 @@ jQuery(document).ready(function () {
         jQuery('.main_tap_wrap').children('.'+data).addClass('active');
         var step = parseInt($('.step_link.current').attr('id').split('_')[1]);
 
-        if(step > 2)
+        if(step > 3)
             $('.project_btn.project').show();
         else
             $('.project_btn.project').hide();
@@ -114,7 +114,9 @@ jQuery(document).ready(function () {
           $('.finally-decision').val(yourDecision);
           $('.finally-decision').text(yourDecision);
     });
+
     $('.rate_self').click(function(){
+        $('.rate_self').removeClass('active');
         $(this).toggleClass('active');
     });
 });

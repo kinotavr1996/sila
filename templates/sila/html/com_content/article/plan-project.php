@@ -28,14 +28,14 @@ $position = 'benefit_calculator';
 
 <div class="item-page<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="https://schema.org/Article">
 <div itemprop="articleBody">
-<div class="steps_wrap_box clearfix ">
+<div class="steps_wrap_box clearfix none">
         <div class="wrap">
             <ul class="steps_name_box">
                 <li  class="st_name step_one active">Выбранный план</li>
                 <li class="st_name step_two">Паспорт проекта</li>
                 <li class="st_name step_three">Паспорт проекта</li>
                 <li class="st_name step_four">Чек Лист</li>
-            </ul>
+            </ul> -->
 
             <ul class="step_btn_wrap clearfix">
 
@@ -68,7 +68,7 @@ $position = 'benefit_calculator';
         <div class="project_btn_wrap clearfix">
 
             <div class="project_btn project">Сменить проект</div>
-            <a href='/' class="project_btn plan">Сменить план</a>
+            <a href='/' class="project_btn plan none-visible">Сменить план</a>
             <div class="project_btn back"><< Назад</div>
             <div class="project_btn next">Продолжить >></div>
         </div>

@@ -426,7 +426,6 @@ body div.joomly-callback-caption > div{
 
 .tab_window {
     min-height: 600px;
-    padding-top: 90px;
 }
 
 .h_two {
@@ -874,7 +873,9 @@ body div.joomly-callback-caption > div{
     float: left;
     position: relative;
 }
-
+.proj_item .proj_title{
+    display: none;
+}
 .inner_wrap {
     display: table;
     margin: 0 auto;
@@ -1244,4 +1245,12 @@ body div.joomly-callback-caption > div{
 
 #joomly-callback .tel{
     display: none;
+}
+
+.none{
+    display: none;
+}
+
+.none-visible{
+    opacity: 0;
 }
